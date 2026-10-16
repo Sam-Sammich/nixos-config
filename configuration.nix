@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, self, ... }:
 
 {
   imports =
@@ -48,6 +48,7 @@
   nixpkgs.config.allowUnfree = true;
   
   programs.niri.enable =  true;
+  programs.niri.package = self.packages.x86_64-linux.niri;
   services.displayManager.ly.enable = true;
 
   programs.firefox.enable = true;

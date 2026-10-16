@@ -11,13 +11,17 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
-        
+        {
+          _module.args = {
+            inherit self;
+          };
+        }
       ];
     };
     packages.x86_64-linux.niri = wrappers.wrappers.niri.wrap (
       {pkg, wlib, lib, ...}: {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        import = [ ./niri.nix ];
+        imports = [ ./niri.nix ];
       }
     );
   };
