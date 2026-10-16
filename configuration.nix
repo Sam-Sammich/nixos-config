@@ -14,6 +14,9 @@
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
 
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
+
   time.timeZone = "America/Chicago";
 
   i18n.defaultLocale = "en_US.UTF-8";
@@ -53,7 +56,10 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
+    kitty
+    rofi
     mpv
+    qbittorrent
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
