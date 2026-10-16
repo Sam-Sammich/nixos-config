@@ -23,7 +23,7 @@
     };
     binds = {
       "Mod+Shift+Slash".show-hotkey-overlay = _: { };
-      "Mod+Return".spawn = [ "${pkgs.kitty}/bin" ];
+      "Mod+Return".spawn = [ "${pkgs.kitty}/bin/kitty" ];
       "Mod+D".spawn = [ "${pkgs.rofi}/bin/rofi" "-show" "drun" ];
       "Mod+Q" = _: {
         props.repeat = false;
