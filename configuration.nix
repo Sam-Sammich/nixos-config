@@ -60,11 +60,15 @@
     rofi
     mpv
     qbittorrent
+    podman-compose
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   services.openssh.enable = true;
+  virtualisation.podman = {
+    enable = true;
+  };
 
   system.stateVersion = "26.05"; # Did you read the comment?
 
