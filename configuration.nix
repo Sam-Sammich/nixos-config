@@ -51,10 +51,15 @@
   programs.niri.enable =  true;
   programs.niri.package = self.packages.x86_64-linux.niri;
   services.displayManager.ly.enable = true;
+  environment.variables = {
+    XCURSOR_THEME = "Bibata-Modern-Ice";
+    XCURSOR_SIZE = "20";
+  };
 
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
+    bibata-cursors
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git

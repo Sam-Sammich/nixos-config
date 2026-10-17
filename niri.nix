@@ -1,6 +1,10 @@
 { pkgs, lib, ... }:
 {
   settings = {
+    cursor = {
+      xcursor-theme = "Bibata-Modern-Ice";
+      xcursor-size = 28;
+    };
     prefer-no-csd = _: { };
     input.warp-mouse-to-focus = _: { };
     input.focus-follows-mouse = _: { };
