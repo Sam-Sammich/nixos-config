@@ -60,6 +60,7 @@
     kitty
     rofi
     mpv
+    lazygit
     qbittorrent
     podman-compose
   ];
