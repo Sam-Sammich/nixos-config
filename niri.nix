@@ -16,7 +16,7 @@
         { proportion = 0.66667; }
       ];
     };
-    spawn-at-startup = [ [ "${pkgs.swaybg}/bin/swaybg" "-i" "~/walls/test.png" ] ];
+    spawn-sh-at-startup = [ "${pkgs.noctalia}/bin/noctalia" ];
     window-rule = {
       geometry-corner-radius = 12;
       clip-to-geometry = true;
@@ -36,7 +36,7 @@
       "Mod+Ctrl+R".reset-window-height = _: { };
       "Mod+O" = _: {
         props.repeat = false;
-        content.close-window = _: { };
+        content.toggle-overview = _: { };
       };
 
       "Mod+Minus".set-column-width = "-10%";

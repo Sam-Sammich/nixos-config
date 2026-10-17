@@ -18,11 +18,14 @@
         }
       ];
     };
-    packages.x86_64-linux.niri = wrappers.wrappers.niri.wrap (
-      {pkg, wlib, lib, ...}: {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        imports = [ ./niri.nix ];
-      }
-    );
+    packages.x86_64-linux = {
+      niri = wrappers.wrappers.niri.wrap (
+        {pkg, wlib, lib, ...}: {
+          pkgs = nixpkgs.legacyPackages.x86_64-linux;
+          imports = [ ./niri.nix ];
+        }
+      );
+      helix = (nixpkgs.legacyPackages.x86_64-linux.callPackage ./helix.nix { });
+    };
   };
 }

@@ -63,6 +63,9 @@
     lazygit
     qbittorrent
     podman-compose
+    xwayland-satellite
+    self.packages.x86_64-linux.helix
+    thunar
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
