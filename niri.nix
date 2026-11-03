@@ -26,6 +26,22 @@
       clip-to-geometry = true;
     };
     binds = {
+      "XF86AudioRaiseVolume" = _: {
+        props.allow-when-locked = true;
+        content.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.03+ -l 1.0";
+      };
+      "XF86AudioLowerVolume" = _: {
+        props.allow-when-locked = true;
+        content.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.03-";
+      };
+      "XF86AudioMute" = _: {
+        props.allow-when-locked = true;
+        content.spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+      };
+      "XF86AudioMicMute" = _: {
+        props.allow-when-locked = true;
+        content.spawn-sh = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+      };
       "Mod+Shift+Slash".show-hotkey-overlay = _: { };
       "Mod+Return".spawn = [ "${pkgs.kitty}/bin/kitty" ];
       "Mod+D".spawn = [ "${pkgs.rofi}/bin/rofi" "-show" "drun" ];
