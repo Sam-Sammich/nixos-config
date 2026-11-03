@@ -72,6 +72,7 @@
     xwayland-satellite
     self.packages.x86_64-linux.helix
     thunar
+    lumafly
     wl-clipboard
     grim
     slurp
