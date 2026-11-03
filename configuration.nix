@@ -72,6 +72,9 @@
     xwayland-satellite
     self.packages.x86_64-linux.helix
     thunar
+    wl-clipboard
+    grim
+    slurp
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
