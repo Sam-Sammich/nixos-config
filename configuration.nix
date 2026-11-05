@@ -76,7 +76,10 @@
     wl-clipboard
     grim
     slurp
+    devenv
   ];
+
+  programs.direnv.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
