@@ -77,6 +77,7 @@
     grim
     slurp
     devenv
+    fastfetch
   ];
 
   programs.direnv.enable = true;
