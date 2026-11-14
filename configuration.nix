@@ -78,6 +78,7 @@
     slurp
     devenv
     fastfetch
+    godot
   ];
 
   programs.direnv.enable = true;
