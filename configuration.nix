@@ -81,6 +81,11 @@
 
   programs.direnv.enable = true;
 
+  programs.nh = {
+    enable = true;
+    flake = "/home/sammy/configuration";
+  };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   services.openssh.enable = true;
