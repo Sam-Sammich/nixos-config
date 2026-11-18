@@ -81,6 +81,9 @@
     devenv
     fastfetch
     godot
+    vesktop
+    github-cli
+    obsidian
   ];
 
   programs.direnv.enable = true;
