@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1791956154,
-        "narHash": "sha256-jBYGPi4udQ9uo4KQp9m2J0546nJVQitG15gvZSaVVAs=",
+        "lastModified": 1794750194,
+        "narHash": "sha256-c6ZxSsG1c2luSrbESFfp9Jq2pSVhGst2to4aIzt2Nes=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "55bfb4d7437bd4e09ab7cba58a43bd68eb310044",
+        "rev": "1a08097fc1ed85575db39763b2c4a5d8970a37ba",
         "type": "github"
       },
       "original": {
@@ -19,7 +19,24 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
+        "walls": "walls",
         "wrappers": "wrappers"
+      }
+    },
+    "walls": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791843901,
+        "narHash": "sha256-m3u2zFYXkjY2Qst3pj7ui9YlKBjJuq1BFo940wBBvgM=",
+        "owner": "Sam-Sammich",
+        "repo": "walls",
+        "rev": "fd7ae41b113a9387462f5ce05c7b611a38c5b24d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Sam-Sammich",
+        "repo": "walls",
+        "type": "github"
       }
     },
     "wrappers": {
@@ -29,11 +46,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1792099834,
-        "narHash": "sha256-DXz+cIXzesoI/PIpmXz++oecML6PgM8s5TwFTFioULs=",
+        "lastModified": 1794870394,
+        "narHash": "sha256-+e+EBD7g4ErCYLjtndYDajwyZGn3P573S3y2fd90gKY=",
         "owner": "nix-community",
         "repo": "nix-wrapper-modules",
-        "rev": "42eb384cead6d47987132ebf27ac4fe6c9625164",
+        "rev": "0e23367a94ea83bc678fb510984b369dae02bfd2",
         "type": "github"
       },
       "original": {
