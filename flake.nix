@@ -13,7 +13,8 @@
 
   outputs = inputs@{ self, nixpkgs, wrappers, walls, ... }:
   let
-    pkgs = nixpkgs.legacyPackages.x86_64-linux;
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
   in
   {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
